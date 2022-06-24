@@ -102,17 +102,12 @@ address {
   align-items: center;
 }
 
-.header-list {
+.header-nav__list {
   display: flex;
 }
 
-.header-nav .header-item + .header-item {
+.header-nav .header-nav__item + .header-nav__item {
   margin-left: 50px;
-}
-
-.header-contacts {
-  display: flex;
-  margin-left: auto;
 }
 
 .header-nav .link {
@@ -120,24 +115,29 @@ address {
   padding: 32px 0;
 }
 
+.header-contacts__list {
+  display: flex;
+  margin-left: auto;
+}
+
 .tel {
   margin-left: 30px;
 }
 
-.header-link {
+.header-nav__link {
   display: flex;
   align-items: center;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  display: block;
+  display: flex;
   padding: 32px 0;
   position: relative;
   transition: color 250ms var(--timing-function);
 }
 
-.header-link.current:after {
+.header-nav__link.current:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -148,13 +148,6 @@ address {
   bottom: 0;
   margin-bottom: -1px;
 }
-
-/* 
-.tel::after {
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/symbol-defs.svg#icon-twitter);
-} */
 
 .current {
   color: var(--accent-color);
@@ -173,12 +166,6 @@ address {
 .header-icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.tel,
-.mail {
-  display: flex;
-  align-items: center;
 }
 
 .tel:hover .smartphone,
@@ -216,11 +203,7 @@ address {
   background-size: cover;
 }
 
-.hero-cont {
-  justify-content: center;
-}
-
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -232,7 +215,7 @@ address {
   margin: auto;
 }
 
-.hero-btn {
+.hero__btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -246,14 +229,14 @@ address {
   transition: background-color 250ms var(--timing-function);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: #188ce8;
 }
 
 /* --------------------------------excell------------------------------- */
 
-.excell-box {
+.excell__item--box {
   display: flex;
   width: 270px;
   height: 120px;
@@ -263,24 +246,24 @@ address {
   border-radius: 4px;
 }
 
-.excell-svg {
+.excell__svg {
   width: 70px;
   height: 70px;
 }
 
-.excell-list {
+.excell__list {
   display: flex;
 }
 
-.excell-list-box {
+.excell__item {
   max-width: 270px;
 }
 
-.excell-list-box:not(:last-child) {
+.excell__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.excell-sub-title {
+.excell__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -289,7 +272,7 @@ address {
   margin-top: 30px;
 }
 
-.excell-text {
+.excell__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -301,7 +284,7 @@ address {
   padding-top: 0;
 }
 
-.about-title {
+.about__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -309,16 +292,16 @@ address {
   margin-bottom: 50px;
 }
 
-.about-list {
+.about__list {
   display: flex;
   margin-left: -30px;
 }
-.about-imgs {
+.about__item {
   margin-left: 30px;
   position: relative;
 }
 
-.about-img-text {
+.about__img--text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -327,7 +310,7 @@ address {
   color: #ffffff;
 }
 
-.about-img-box {
+.about__img--box {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -344,23 +327,23 @@ address {
   background-color: var(--section-grey-color);
 }
 
-.team-list {
+.team__list {
   display: flex;
   margin-left: -30px;
 }
 
-.team-card {
+.team__item {
   background-color: var(--white-color);
   margin-left: 30px;
   border-radius: 4px;
   box-shadow: 0 3px 3px rgb(0 0 0 / 25%);
 }
 
-.team-card:hover {
+.team__item:hover {
   box-shadow: 0 5px 5px rgb(0 0 0 / 25%);
 }
 
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -368,7 +351,7 @@ address {
   margin-bottom: 50px;
 }
 
-.team-name {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -377,7 +360,7 @@ address {
   margin-bottom: 10px;
 }
 
-.team-prof {
+.team__prof {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -385,7 +368,7 @@ address {
   margin-bottom: 16px;
 }
 
-.team-social-list {
+.team__soc-list {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -423,7 +406,7 @@ address {
 
 /* --------------------------------clients------------------------------- */
 
-.clients-title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -433,18 +416,18 @@ address {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   max-width: 1170px;
   justify-content: space-between;
 }
 
-.clients-svg-box {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,18 +437,18 @@ address {
   border-radius: 4px;
 }
 
-.client-logo {
+.client__logo {
   fill: var(--svg-color);
   transition: fill 250ms var(--timing-function);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   outline: 1px solid var(--accent-color);
 }
 
-.clients-link:hover .client-logo,
-.clients-link:focus .client-logo {
+.clients__link:hover .client__logo,
+.clients__link:focus .client__logo {
   fill: var(--accent-color);
 }
 
@@ -739,13 +722,13 @@ address {
 }
 
 .btn-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 8px 8px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close-btn:hover,
