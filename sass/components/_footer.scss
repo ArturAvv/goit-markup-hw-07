@@ -86,9 +86,14 @@
   border: 1px solid $secondary-text-color;
   border-radius: 4px;
   padding-left: 16px;
-  color: $white-color;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
   line-height: 1.25;
+  transition: border-color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 }
 
 .footer__btn {
