@@ -474,7 +474,7 @@ address {
   margin-bottom: 20px;
 }
 
-.footer-social-box {
+.footer__soc-cont {
   margin-left: 70px;
 }
 
@@ -483,7 +483,7 @@ address {
   color: var(--white-text-color);
 }
 
-.footer-link {
+.footer__link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   display: block;
@@ -491,7 +491,7 @@ address {
   transition: color 250ms var(--timing-function);
 }
 
-.footer-social-text {
+.footer__soc-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -501,12 +501,12 @@ address {
   margin-bottom: 20px;
 }
 
-.footer-social-list {
+.footer__soc-list {
   display: flex;
   /* justify-content: center; */
 }
 
-.footer-social-item {
+.footer__soc-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -519,7 +519,7 @@ address {
   transition: background-color 250ms var(--timing-function);
 }
 
-.footer-social-icon {
+.footer__soc-icon {
   fill: var(--white-text-color);
 }
 
@@ -528,15 +528,15 @@ address {
   background-color: var(--accent-color);
 }
 
-.footer-form-cont {
+.footer__form-cont {
   margin-left: auto;
 }
 
-.footer-form {
+.footer__form {
   display: flex;
 }
 
-.footer-input {
+.footer__input {
   background-color: var(--footer-color);
   width: 358px;
   height: 50px;
@@ -548,7 +548,7 @@ address {
   line-height: 1.25;
 }
 
-.footer-btn {
+.footer__btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -570,6 +570,10 @@ address {
 .footer-btn:focus {
   background-color: #188ce8;
 }
+/* 
+.footer__btn--icon {
+  margin-left: auto;
+} */
 
 /* --------------------------------portfolio------------------------------- */
 
@@ -617,7 +621,7 @@ address {
   color: var(--secondary-text-color);
 }
 
-.projects-list {
+.projects__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -625,7 +629,7 @@ address {
   margin-bottom: -30px;
 }
 
-.projects-item {
+.projects__item {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
